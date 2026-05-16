@@ -2,11 +2,8 @@ import tkinter as tk
 from tkinter import scrolledtext
 from google import genai
 import threading
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
-chave_api = os.getenv("GEMINI_API_KEY")
+chave_api = "AIzaSyCIUzlEZfGEdvVv2X0WhI_zFE00xBPlNxs"
 cliente = genai.Client(api_key=chave_api)
 chat_sessao = cliente.chats.create(model="gemini-2.0-flash-lite")
 
