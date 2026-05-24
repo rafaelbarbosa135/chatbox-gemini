@@ -3,7 +3,7 @@ from tkinter import scrolledtext
 from google import genai
 import threading
 
-chave_api = "AIzaSyCIUzlEZfGEdvVv2X0WhI_zFE00xBPlNxs"
+chave_api = "sua-chave-aqui"
 cliente = genai.Client(api_key=chave_api)
 chat_sessao = cliente.chats.create(model="gemini-2.0-flash-lite")
 
