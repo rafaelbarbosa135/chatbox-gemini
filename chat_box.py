@@ -3,9 +3,9 @@ from tkinter import scrolledtext
 from google import genai
 import threading
 
-chave_api = "sua-chave-aqui"
+chave_api = "digite-sua-chave-aqui" # Gere sua chave em: aistudio.google.com
 cliente = genai.Client(api_key=chave_api)
-chat_sessao = cliente.chats.create(model="gemini-2.0-flash-lite")
+chat_sessao = cliente.chats.create(model="gemini-2.5-flash")
 
 def enviar_mensagem():
     texto = entrada.get()
